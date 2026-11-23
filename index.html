@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OneKinder — Preschool &amp; Kindergarten Management Platform</title>
+  <meta name="description" content="One platform to run your preschool — admissions, attendance, fees, communication and parent engagement in a single system. Web portals and mobile apps for schools, teachers and parents.">
+  <meta name="keywords" content="preschool management software, kindergarten management system, school ERP for preschool, multi-branch school management, parent teacher communication app, online fee collection for schools, student attendance software, admission management system">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="OneKinder — Run your preschool from one simple platform">
+  <meta property="og:description" content="Admissions, attendance, fees, homework and parent communication — all in one place, with web portals and mobile apps for every role.">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Icon sprite -->
+  <svg class="icon-sprite" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4.5 4.5L19 7"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6 18 18M18 6 6 18"/></symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4m8-4v4M3 10h18m-9 4 2 2 3-3"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 10h19m-14 5h4"/></symbol>
+    <symbol id="i-form" viewBox="0 0 24 24"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6m-6 4h4"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.2"/><path d="M3.5 19c0-3 2.5-5 5.5-5s5.5 2 5.5 5M16 6.2a3 3 0 0 1 0 5.6m1 2.2c2.2.4 3.5 2.2 3.5 5"/></symbol>
+    <symbol id="i-message" viewBox="0 0 24 24"><path d="M20 12a7.5 7.5 0 0 1-7.5 7.5H8L4 21.5l1.2-4A7.5 7.5 0 1 1 20 12Z"/><path d="M8.5 11.5h7m-7 3h4"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4m0 16h16"/><rect x="7" y="12" width="3" height="5" rx="1"/><rect x="12" y="8" width="3" height="9" rx="1"/><rect x="17" y="5" width="3" height="12" rx="1"/></symbol>
+    <symbol id="i-branch" viewBox="0 0 24 24"><circle cx="6" cy="5" r="2.5"/><circle cx="18" cy="5" r="2.5"/><circle cx="12" cy="19" r="2.5"/><path d="M6 7.5v3a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3v-3m-6 6v3"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 6.5C9.5 4.5 6.5 4.3 3.5 5v13c3-.7 6-.5 8.5 1.5m0-13c2.5-2 5.5-2.2 8.5-1.5v13c-3-.7-6-.5-8.5 1.5m0-13v13"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2.8 20 6v5.5c0 5-3.3 8.2-8 9.7-4.7-1.5-8-4.7-8-9.7V6z"/><path d="m8.8 12 2.2 2.2 4.2-4.2"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4.5" y="10" width="15" height="11" rx="2"/><path d="M8 10V7.5a4 4 0 0 1 8 0V10"/></symbol>
+  </svg>
+
+  <!-- Announcement bar -->
+  <div class="announce">
+    <span class="announce-dot" aria-hidden="true"></span>
+    One platform for your school leaders, teachers and every parent.
+    <a href="demo.html">Book a demo <svg class="icon icon-xs" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="OneKinder home">
+        <img src="assets/logo.png" alt="OneKinder" width="450" height="126">
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="features.html">Features</a>
+        <a href="for-schools.html">For Schools</a>
+        <a href="for-teachers.html">For Teachers</a>
+        <a href="for-parents.html">For Parents</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faq.html">FAQ</a>
+        <div class="nav-actions">
+          <a class="btn btn-ghost btn-sm" href="demo.html">Log in</a>
+          <a class="btn btn-primary btn-sm" href="demo.html">Book a demo</a>
+        </div>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+        <svg class="icon" aria-hidden="true"><use href="#i-menu"></use></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-glow hero-glow-a" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-b" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Built for preschools &amp; kindergartens</span>
+          <h1>Run your preschool from <span class="highlight">one</span> simple platform.</h1>
+          <p class="hero-sub">OneKinder brings admissions, attendance, fees, homework, activities and parent communication together — with a role-based web portal and mobile apps for everyone in your school community.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg" href="#demo">Book a demo <svg class="icon icon-sm" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+            <a class="btn btn-outline btn-lg" href="features.html">Explore features</a>
+          </div>
+          <p class="hero-note"><svg class="icon icon-xs" aria-hidden="true"><use href="#i-check"></use></svg> Web portals for admins, teachers &amp; parents · Branded mobile apps included</p>
+        </div>
+
+        <!-- Real product screenshot: admin web portal -->
+        <figure class="hero-shot">
+          <a class="shot-zoom" href="assets/Admin_dashboard.png" data-lightbox aria-label="Enlarge admin dashboard screenshot">
+            <img src="assets/Admin_dashboard.png" alt="OneKinder admin dashboard showing a school's daily records and operations" width="1920" height="1427">
+          </a>
+          <figcaption>Admin dashboard — the school's daily command centre.</figcaption>
+        </figure>
+      </div>
+
+      <div class="container">
+        <div class="trust-strip">
+          <span class="trust-label">Made for every kind of early-learning school</span>
+          <div class="trust-chips">
+            <span>Preschools</span><span>Kindergartens</span><span>Play schools</span><span>Daycare centres</span><span>Nursery schools</span><span>Multi-branch groups</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem -->
+    <section class="problem section section-dark" id="problem">
+      <div class="container">
+        <div class="section-head center">
+          <span class="section-kicker section-kicker-light">The problem</span>
+          <h2>Still juggling school operations across spreadsheets, registers and WhatsApp?</h2>
+          <p class="section-lead section-lead-light">Information lives in too many places. OneKinder gives your school one dependable home for every daily task — and keeps everyone in the loop automatically.</p>
+        </div>
+        <div class="problem-grid">
+          <article class="problem-card">
+            <span class="problem-icon"><svg class="icon" aria-hidden="true"><use href="#i-users"></use></svg></span>
+            <h3>Records scattered everywhere</h3>
+            <p>Student details in one file, fees in another, parent conversations buried in a chat thread. Nothing is easy to find when you need it.</p>
+          </article>
+          <article class="problem-card">
+            <span class="problem-icon"><svg class="icon" aria-hidden="true"><use href="#i-clock"></use></svg></span>
+            <h3>Follow-ups eat your day</h3>
+            <p>Manual fee reminders, attendance registers and announcement forwards keep your staff busy long after the children go home.</p>
+          </article>
+          <article class="problem-card">
+            <span class="problem-icon"><svg class="icon" aria-hidden="true"><use href="#i-message"></use></svg></span>
+            <h3>Parents left guessing</h3>
+            <p>Without a shared view of homework, activities, diary notes and fees, families keep asking for updates your team has to repeat.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features section" id="features">
+      <div class="container">
+        <div class="section-head center">
+          <span class="section-kicker">One platform, every part of your day</span>
+          <h2>Everything your preschool needs, working together.</h2>
+          <p>Six core areas cover the work your team does every day — from the first admission enquiry to the last fee receipt.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card" id="attendance">
+            <span class="feature-icon feature-icon-coral"><svg class="icon" aria-hidden="true"><use href="#i-calendar"></use></svg></span>
+            <h3>Attendance &amp; geofencing</h3>
+            <p>Mark student attendance in bulk, apply clear late and half-day cutoffs, and verify teacher check-ins with GPS and a configurable radius.</p>
+          </article>
+          <article class="feature-card" id="fees">
+            <span class="feature-icon feature-icon-green"><svg class="icon" aria-hidden="true"><use href="#i-card"></use></svg></span>
+            <h3>Fees &amp; payments</h3>
+            <p>Create invoices in bulk, accept Razorpay payments, record cash, UPI, cheque or DD collections, and send overdue reminders automatically.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon feature-icon-yellow"><svg class="icon" aria-hidden="true"><use href="#i-form"></use></svg></span>
+            <h3>Admissions</h3>
+            <p>Collect applications on a public form, accept documents, track every status, and turn an approved applicant into a student record with one click.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon feature-icon-blue"><svg class="icon" aria-hidden="true"><use href="#i-users"></use></svg></span>
+            <h3>Students &amp; classrooms</h3>
+            <p>Keep clean student records with roll numbers, parent links and status history. Import in bulk, promote classes, and restore accidental deletions.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon feature-icon-purple"><svg class="icon" aria-hidden="true"><use href="#i-message"></use></svg></span>
+            <h3>Parent communication</h3>
+            <p>Send targeted announcements, homework, daily activities with photos, diary notes and messages — with email and push alerts built in.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon feature-icon-teal"><svg class="icon" aria-hidden="true"><use href="#i-chart"></use></svg></span>
+            <h3>Reports &amp; analytics</h3>
+            <p>See enrolment, attendance, fees, staffing and admissions in clear charts and KPI cards, scoped to the right school or branch for each leader.</p>
+          </article>
+        </div>
+        <div class="center mt-lg">
+          <a class="btn btn-outline" href="#why">See what makes OneKinder different <svg class="icon icon-sm" aria-hidden="true"><use href="#i-arrow"></use></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Roles -->
+    <section class="roles section section-tint" id="roles">
+      <div class="container">
+        <div class="section-head center">
+          <span class="section-kicker">One platform, three front doors</span>
+          <h2>The right workspace for every person in your school.</h2>
+          <p>Everyone signs in once and lands in a dashboard built for their job — no training needed, no extra apps to chase.</p>
+        </div>
+
+        <div class="role-tabs" role="tablist" aria-label="Choose a role">
+          <button class="role-tab is-active" type="button" role="tab" id="tab-school" aria-controls="panel-school" aria-selected="true" data-tab="school">
+            <svg class="icon" aria-hidden="true"><use href="#i-branch"></use></svg> For schools &amp; admins
+          </button>
+          <button class="role-tab" type="button" role="tab" id="tab-teacher" aria-controls="panel-teacher" aria-selected="false" data-tab="teacher">
+            <svg class="icon" aria-hidden="true"><use href="#i-book"></use></svg> For teachers
+          </button>
+          <button class="role-tab" type="button" role="tab" id="tab-parent" aria-controls="panel-parent" aria-selected="false" data-tab="parent">
+            <svg class="icon" aria-hidden="true"><use href="#i-users"></use></svg> For parents
+          </button>
+        </div>
+
+        <div class="role-panels">
+          <div class="role-panel is-active" role="tabpanel" id="panel-school" aria-labelledby="tab-school">
+            <div class="role-copy">
+              <span class="role-badge">Branch admin &amp; school leadership</span>
+              <h3>One command centre for every daily task.</h3>
+              <p>Run daily operations from a single workspace: student records, fees, attendance, announcements, calendar approvals, admissions and reports — with branch-level access when you have more than one campus.</p>
+              <ul class="check-list">
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Student &amp; classroom management</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Fee tracking and overdue reminders</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Teacher attendance &amp; calendar approvals</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Trash &amp; restore for deleted records</li>
+              </ul>
+            </div>
+            <figure class="shot-card">
+              <a class="shot-zoom" href="assets/Admin_dashboard.png" data-lightbox aria-label="Enlarge admin dashboard screenshot">
+                <img src="assets/Admin_dashboard.png" alt="OneKinder admin dashboard web portal" width="1920" height="1427" loading="lazy">
+              </a>
+              <figcaption><strong>Admin dashboard</strong><small>Students, fees, attendance and daily operations in one view.</small></figcaption>
+            </figure>
+          </div>
+
+          <div class="role-panel" role="tabpanel" id="panel-teacher" aria-labelledby="tab-teacher" hidden>
+            <div class="role-copy">
+              <span class="role-badge">Teacher portal &amp; app</span>
+              <h3>Less paperwork. More time with children.</h3>
+              <p>Teachers get their classrooms, student attendance, homework, activities, diary notes and performance records in one place — plus their own check-in and check-out.</p>
+              <ul class="check-list">
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> My classrooms and student lists</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Homework with file attachments</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Daily activities and photo posts</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Calendar events and performance notes</li>
+              </ul>
+            </div>
+            <figure class="shot-card">
+              <a class="shot-zoom" href="assets/teacher_myclassoom.png" data-lightbox aria-label="Enlarge teacher classroom screenshot">
+                <img src="assets/teacher_myclassoom.png" alt="Teacher web portal showing a classroom with its student list" width="1883" height="939" loading="lazy">
+              </a>
+              <figcaption><strong>My classroom</strong><small>A teacher's class list and student records at a glance.</small></figcaption>
+            </figure>
+          </div>
+
+          <div class="role-panel" role="tabpanel" id="panel-parent" aria-labelledby="tab-parent" hidden>
+            <div class="role-copy">
+              <span class="role-badge">Parent portal &amp; app</span>
+              <h3>Stay connected to your child's school every day.</h3>
+              <p>Parents see their child's profile, fees, homework, announcements, activities, diary notes and calendar in one simple view — and can message the school directly.</p>
+              <ul class="check-list">
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Child profile and daily updates</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Fees, receipts and online payments</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Homework, diary and announcements</li>
+                <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Messages with teachers and admins</li>
+              </ul>
+            </div>
+            <figure class="shot-card">
+              <a class="shot-zoom" href="assets/parent_dashboard.png" data-lightbox aria-label="Enlarge parent dashboard screenshot">
+                <img src="assets/parent_dashboard.png" alt="Parent web portal dashboard showing a child's school updates" width="1920" height="1637" loading="lazy">
+              </a>
+              <figcaption><strong>Parent dashboard</strong><small>A simple daily view of your child's school updates.</small></figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Differentiators -->
+    <section class="why section" id="why">
+      <div class="container">
+        <div class="section-head center">
+          <span class="section-kicker">Built for real school life</span>
+          <h2>The details that make OneKinder different.</h2>
+          <p>Practical controls for the situations every preschool faces — not just a digital address book.</p>
+        </div>
+
+        <div class="split-row">
+          <div class="split-copy">
+            <span class="split-icon feature-icon-coral"><svg class="icon" aria-hidden="true"><use href="#i-branch"></use></svg></span>
+            <h3>Grow to more branches without mixing up data.</h3>
+            <p>Group schools under one organisation, give each branch its own admin and settings, and let owners see the whole picture. New branches inherit sensible defaults, and analytics are scoped so each leader sees only what they should.</p>
+            <ul class="check-list compact">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> School groups and branch-level admins</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Settings inherited by new branches</li>
+            </ul>
+          </div>
+          <div class="split-visual branch-visual" aria-hidden="true">
+            <div class="branch-node main"><span class="branch-mark">oK</span><div><strong>Little Steps Group</strong><small>3 branches</small></div></div>
+            <div class="branch-lines"><i></i><i></i><i></i></div>
+            <div class="branch-kids">
+              <div><span class="branch-mark mint">01</span><strong>Chrompet</strong><small>96 students</small></div>
+              <div><span class="branch-mark yellow">02</span><strong>Velachery</strong><small>84 students</small></div>
+              <div><span class="branch-mark blue">03</span><strong>Adyar</strong><small>68 students</small></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="split-row reverse">
+          <div class="split-copy">
+            <span class="split-icon feature-icon-green"><svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg></span>
+            <h3>Attendance you can actually trust.</h3>
+            <p>Configure check-in, grace and half-day cutoffs once. Teacher check-ins capture location and accuracy, reject clocks outside the geofence, and never let a half-day quietly become a full day.</p>
+            <ul class="check-list compact">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> GPS radius and accuracy checks</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Present, Late, Half-Day and Absent rules</li>
+            </ul>
+          </div>
+          <div class="split-visual timeline-visual" aria-hidden="true">
+            <div class="timeline-line"></div>
+            <div class="timeline-step done"><span>9:00</span><strong>Present</strong><small>On time</small></div>
+            <div class="timeline-step grace"><span>9:15</span><strong>Late</strong><small>Grace window</small></div>
+            <div class="timeline-step half"><span>12:30</span><strong>Half-day</strong><small>Cutoff reached</small></div>
+            <div class="timeline-step absent"><span>After</span><strong>Blocked</strong><small>Marked absent</small></div>
+          </div>
+        </div>
+
+        <div class="split-row">
+          <div class="split-copy">
+            <span class="split-icon feature-icon-yellow"><svg class="icon" aria-hidden="true"><use href="#i-form"></use></svg></span>
+            <h3>From first enquiry to enrolled student.</h3>
+            <p>A public application form, document uploads, status tracking and a review workflow lead to a single action that creates the student record and admission invoice. No re-typing, no lost paperwork.</p>
+            <ul class="check-list compact">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Save drafts and track by application number</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Convert approved applicants in one click</li>
+            </ul>
+          </div>
+          <div class="split-visual funnel-visual" aria-hidden="true">
+            <div><span>1</span> Application received <i></i></div>
+            <div><span>2</span> Under review <i></i></div>
+            <div><span>3</span> Selected / waitlisted <i></i></div>
+            <div><span>4</span> Admitted <i></i></div>
+            <div class="funnel-end"><svg class="icon"><use href="#i-users"></use></svg> Student record created</div>
+          </div>
+        </div>
+
+        <div class="split-row reverse">
+          <div class="split-copy">
+            <span class="split-icon feature-icon-purple"><svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg></span>
+            <h3>Your school, your brand, your app.</h3>
+            <p>Set your school logo and display name, enjoy a branded login experience, and roll out parent, teacher and admin mobile apps with controlled versions, release notes and school-specific splash screens.</p>
+            <ul class="check-list compact">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> White-label login and school identity</li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Branded APK releases with force-update control</li>
+            </ul>
+          </div>
+          <div class="split-visual app-visual" aria-hidden="true">
+            <div class="mini-phone"><span class="mini-notch"></span><div class="mini-screen"><span class="mini-logo">oK</span><strong>Little Steps</strong><small>Today's update for Aarav</small><div class="mini-bars"><i></i><i></i><i></i></div><span class="mini-pill">Present · 9:02 AM</span></div></div>
+            <div class="app-badges"><span>Parent app</span><span>Teacher app</span><span>Admin app</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="steps section section-tint" id="how">
+      <div class="container">
+        <div class="section-head center">
+          <span class="section-kicker">Getting started</span>
+          <h2>Three steps to simpler school management.</h2>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card"><span class="step-num">1</span><h3>Tell us about your school</h3><p>Share your setup, branches and the workflows you want to move into OneKinder.</p></article>
+          <article class="step-card"><span class="step-num">2</span><h3>We set up your workspace</h3><p>Your roles, classes, fee settings and branding are configured for your school.</p></article>
+          <article class="step-card"><span class="step-num">3</span><h3>Bring your team along</h3><p>Admins, teachers and parents sign in to the right dashboard — with mobile apps ready to go.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq section" id="faq">
+      <div class="container faq-grid">
+        <div class="faq-intro">
+          <span class="section-kicker">Questions, answered</span>
+          <h2>Good to know before you start.</h2>
+          <p>Can't find what you're looking for? <a href="#demo">Ask us in a demo</a> — we'll walk through your school's setup.</p>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>Is this only a web app?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></summary>
+            <p>No. OneKinder includes role-based web portals and mobile apps for parents, teachers and administrators.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can it manage multiple branches?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></summary>
+            <p>Yes. Schools can be grouped into branches with separate settings, branch-level admins and scoped access for each leader.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can parents pay fees online?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></summary>
+            <p>Yes. Razorpay is integrated for fee and admission payments, and each school can enable or disable online payments.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Does it support offline payments?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></summary>
+            <p>Yes. Cash, UPI, cheque and demand draft collections can be recorded and tracked alongside online transactions.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Is teacher attendance location-verified?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></summary>
+            <p>Yes. Teacher check-in and check-out capture GPS coordinates and accuracy, with a configurable geofence radius and cutoff rules.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Is there a safe way to explore the product first?<svg class="icon" aria-hidden="true"><use href="#i-chevron"></use></svg></summary>
+            <p>Yes. Demo accounts let new users explore the portals and create sample records without changing real school data.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Demo / CTA + pricing -->
+    <section class="cta section section-dark" id="demo">
+      <div class="container cta-grid">
+        <div class="cta-copy">
+          <span class="section-kicker section-kicker-light">Book a demo</span>
+          <h2>See OneKinder with your own school's workflow.</h2>
+          <p>Tell us a little about your school and we'll show you the dashboards, fee flow and parent experience that fit the way you work.</p>
+          <ul class="check-list light">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Walkthrough for admins, teachers and parents</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> Questions about multi-branch setup welcome</li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"></use></svg> No commitment — just a clear look at the platform</li>
+          </ul>
+          <div class="cta-pricing" id="pricing">
+            <span class="cta-pricing-label">Pricing</span>
+            <p>Plans for single schools, multi-branch groups and franchise networks. <strong>Contact us for pricing.</strong></p>
+          </div>
+        </div>
+
+        <form class="demo-form" id="demo-form" novalidate>
+          <h3>Request a demo</h3>
+          <p class="demo-form-note">This form opens your email app with the details filled in.</p>
+          <div class="field">
+            <label for="demo-name">Your name</label>
+            <input id="demo-name" name="name" type="text" autocomplete="name" placeholder="e.g. Anita Sharma" required>
+            <span class="field-error" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="demo-school">School name</label>
+            <input id="demo-school" name="school" type="text" autocomplete="organization" placeholder="e.g. Little Steps Preschool" required>
+            <span class="field-error" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="demo-email">Work email</label>
+            <input id="demo-email" name="email" type="email" autocomplete="email" placeholder="you@school.com" required>
+            <span class="field-error" aria-live="polite"></span>
+          </div>
+          <div class="field">
+            <label for="demo-message">Anything we should know? <span class="optional">Optional</span></label>
+            <textarea id="demo-message" name="message" rows="3" placeholder="Number of branches, classes, or anything you'd like to see."></textarea>
+          </div>
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Send demo request <svg class="icon icon-sm" aria-hidden="true"><use href="#i-arrow"></use></svg></button>
+          <p class="demo-form-foot"><svg class="icon icon-xs" aria-hidden="true"><use href="#i-lock"></use></svg> We only use these details to reply to your request.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo-light.png" alt="OneKinder" width="450" height="126">
+          <p>One platform to run your preschool — admissions, attendance, fees, communication and parent engagement in a single system.</p>
+          <a class="footer-mail" href="mailto:hello@onekinder.example"><svg class="icon icon-sm" aria-hidden="true"><use href="#i-mail"></use></svg> hello@onekinder.example</a>
+        </div>
+        <div class="footer-col">
+          <h2>Platform</h2>
+          <a href="features.html">Features</a>
+          <a href="for-schools.html">For schools</a>
+          <a href="for-teachers.html">For teachers</a>
+          <a href="for-parents.html">For parents</a>
+          <a href="multi-branch.html">Multi-branch control</a>
+        </div>
+        <div class="footer-col">
+          <h2>Explore</h2>
+          <a href="admissions.html">Admissions</a>
+          <a href="features.html#attendance">Attendance</a>
+          <a href="features.html#fees">Fees &amp; payments</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="faq.html">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h2>Get in touch</h2>
+          <a href="demo.html">Book a demo</a>
+          <a href="mailto:hello@onekinder.example">Contact us</a>
+          <a href="privacy.html">Privacy policy</a>
+          <a href="terms.html">Terms of service</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> OneKinder. All rights reserved.</span>
+        <span>Built for the people who care for little learners.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
