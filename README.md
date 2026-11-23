@@ -50,10 +50,14 @@ robots.txt
 
 1. **Demo email** — `DEMO_EMAIL` at the top of `assets/js/main.js` is currently `hello@onekinder.example`. The demo form opens the visitor's email app with a prefilled message; update this to your real address. The same address appears in the header/footer of every page.
 2. **Login URL** — the "Log in" button in every page header currently points to `demo.html` because no app URL was provided.
-3. **Domain** — `sitemap.xml` and `robots.txt` use `https://onekinder.example/`. Replace with your real domain.
+3. **Domain** — the site is published at `https://dineshbalajinp.github.io/1kinder/` via GitHub Pages, and `sitemap.xml` / `robots.txt` use that address. When a real marketing domain is available, replace these URLs (and add a `CNAME` file for GitHub Pages).
 4. **Legal pages** — `privacy.html` and `terms.html` are clearly marked draft templates. Replace with legally reviewed text before launch.
 5. **Product screenshots** — web portal screenshots are now used on the home page and the three role pages. They open in a clickable lightbox (arrow keys and Escape supported); logos are not lightboxed. Mobile app screenshots can be added when available by wrapping the new `<img>` in an `<a class="shot-zoom" href="..." data-lightbox>`.
 6. **Pricing** — no prices are published; the pricing page says "Contact for pricing" by design.
+
+## Live site
+
+Published with GitHub Pages from the `main` branch: https://dineshbalajinp.github.io/1kinder/
 
 ## Deployment
 

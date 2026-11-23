@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Replace this with your live sitemap URL before publishing.
-Sitemap: https://onekinder.example/sitemap.xml
+Sitemap: https://dineshbalajinp.github.io/1kinder/sitemap.xml
